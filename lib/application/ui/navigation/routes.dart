@@ -12,7 +12,6 @@ class Routes {
   static const String dateOfBirth = '/date_of_birth';
   static const String summary = '/summary';
 
-
   static final routes = <String, WidgetBuilder>{
     choice: (BuildContext context) => const ChoicePage(),
     dateOfBirth: (BuildContext context) => const DateOfBirthPage(),

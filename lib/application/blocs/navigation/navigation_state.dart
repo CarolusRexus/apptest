@@ -2,7 +2,6 @@ part of 'navigation_cubit.dart';
 
 enum Choice { pregnancy, period }
 
-
 ///each class describes the state of current page
 @immutable
 abstract class NavigationState {}

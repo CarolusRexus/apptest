@@ -6,6 +6,10 @@ part 'navigation_state.dart';
 class NavigationCubit extends Cubit<NavigationState> {
   NavigationCubit() : super(ChoiceState());
 
+  void toChoicePage() {
+    emit(ChoiceState());
+  }
+
   void toDateOfBirthPage(Choice choice) => emit(DateOfBirthState(choice));
 
   void toSummary(int year) {
@@ -14,5 +18,4 @@ class NavigationCubit extends Cubit<NavigationState> {
       emit(SummaryState(year, state.choice));
     }
   }
-
 }
